@@ -1,0 +1,95 @@
+body{background-color:lightblue}
+
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.name {
+  width: 100%;
+  overflow: auto;
+}
+
+.name a {
+  float: left;
+  padding: 12px;
+  color: grey;
+  text-decoration: none;
+  font-size: 20px;
+  width: 10%; 
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  width: 10%; 
+  text-align: center;
+}
+
+@media screen and (max-width: 50px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 50%;
+    text-align: left;
+  }
+}
+
+header{background-color: lightblue;
+           padding: 30px;}
+
+
+.hours{
+  float: right;
+  color: white;
+  display: block;
+  height: 300px;
+  clear: none; 
+  display:inline-block;
+  padding: 10px;
+  padding-right: 350px;
+
+}
+
+main{
+  
+
+}
+
+.follow{
+  clear: both;
+  padding-left: 25px;
+  padding-top: 40px;
+}
+
+footer{
+  background-color: lightblue;
+  
+     }
+
+ ul {
+  list-style-type: none;
+ }
+
+.footer-social-icons{
+  padding-left: 200px;
+
+}
+
+.mapouter{
+  float:left;
+  padding-left:200px;
+}
+
+.home-pic{
+  padding-left: 200px;
+  padding-right: 200px;
+}
