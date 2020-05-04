@@ -3,6 +3,70 @@
 <head>
   <title>Tampopo Ramen</title>
   <link rel="stylesheet" type="text/css" href="style1.css">
+<<<<<<< Updated upstream
+=======
+  <script src="https://mysqljs.com/mysql.js" type="text/javascript"></script>
+  <script>
+
+  function processForm() {
+
+    let sqlStmt, whereClause = "";
+
+    sqlStmt = "SELECT * FROM Menu ";
+
+    whereClause = " WHERE ID = " + document.getElementById("menuID").value;
+
+    sqlStmt = sqlStmt + whereClause;
+
+    MySql.Execute(
+        "sql.wpc-is.online",  // remote host
+        "bpkieu",           // username
+        "bpki9433",           // password
+        "db_test_TeamA06",   // database name
+
+        sqlStmt,                   // SQL statement
+        function(dataSet, colSet) {          // callback function
+          console.clear();
+          document.getElementById("output").innerHTML = dataSet;
+          console.log("data parameter: ", dataSet);
+
+          var dataAsString = JSON.stringify(dataSet);
+          document.getElementById("output").innerHTML = dataAsString;
+
+          console.log("Proceed? ", dataSet.Success);
+
+          if (dataSet.Success == true) {
+            console.log("A single row, as an obj.: ", dataSet.Result[0]);
+            console.log("A single row, as string: ", JSON.stringify(dataSet.Result[0]));
+            console.log("A single row, single column: ", dataSet.Result[0].Name);
+
+
+            var fieldValue = dataSet.Result[0].Name;
+            // How to display to console a single field variable as string
+            //console.log("Single row's Name: ", fieldValue);
+            
+
+            var fieldValue2 = dataSet.Result[0].Cost;
+            //console.log("Single row's Cost: ", fieldValue);
+
+            // Calculating total item cost
+            var tax = fieldValue2 * .07;
+            var total = fieldValue2 + tax;
+
+            document.getElementById("output").innerHTML = "Item: " + fieldValue + 
+                                                "<br> Item Price: " + fieldValue2.toFixed(2) + 
+                                                "<br> Tax (7%): " + tax.toFixed(2) + 
+                                                "<br> Total Cost: " + total.toFixed(2) 
+
+          }
+          else
+            document.getElementById("output").innerHTML = "Unable to proceed. No data.";
+
+       });
+  }
+
+  </script>
+>>>>>>> Stashed changes
 </head>
 <body> 
   <header>
