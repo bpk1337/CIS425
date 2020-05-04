@@ -1,20 +1,24 @@
-body{background-color:lightblue}
+body{background-color:rgb(173, 216, 230);}
 
-* {box-sizing: border-box}
-body {font-family: Arial, Helvetica, sans-serif;}
+*{box-sizing: border-box;
+
+font-family: 'Montserrat', sans-serif;
+
+}
 
 
 .name {
   width: 100%;
   overflow: auto;
+  font-size: 50px;
 }
 
 .name a {
   float: left;
   padding: 12px;
-  color: grey;
+  color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   width: 10%; 
   text-align: center;
 }
@@ -27,9 +31,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .navbar a {
   float: right;
   padding: 12px;
-  color: white;
+  color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   width: 10%; 
   text-align: center;
 }
@@ -43,36 +47,42 @@ body {font-family: Arial, Helvetica, sans-serif;}
   }
 }
 
-header{background-color: lightblue;
-           padding: 30px;}
+header{
+  background-color: rgba(173, 216, 230, 0.9);
+  padding: 30px;
+  border-radius: 5px;
+}
 
 
 .hours{
   float: right;
-  color: white;
+  color: black;
   display: block;
   height: 300px;
   clear: none; 
   display:inline-block;
   padding: 10px;
-  padding-right: 350px;
+  padding-right: 175px;
+  font-size: 25px;
+
 
 }
 
 main{
-  
-
+   background-color:rgba(255,255,255, 0.8);
+   border-radius: 5px;
 }
 
 .follow{
   clear: both;
   padding-left: 25px;
   padding-top: 40px;
+  color:black;
 }
 
 footer{
-  background-color: lightblue;
-  
+  background-color: rgba(173, 216, 230, 0.9);
+  border-radius: 5px;
      }
 
  ul {
@@ -81,12 +91,13 @@ footer{
 
 .footer-social-icons{
   padding-left: 200px;
-
+  padding-bottom: 20px;
 }
 
 .mapouter{
   float:left;
   padding-left:200px;
+  border-radius: 5px;
 }
 
 .home-pic{
