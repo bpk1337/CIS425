@@ -49,11 +49,12 @@
 
             // Calculating total item cost
             var tax = fieldValue2 * .07;
+            var t = tax.toFixed(2)
             var total = fieldValue2 + tax;
 
             document.getElementById("output").innerHTML = "Item: " + fieldValue + 
                                                 "<br> Item Price: " + fieldValue2 + 
-                                                "<br> Tax (7%): " + tax + 
+                                                "<br> Tax (7%): " + t + 
                                                 "<br> Total Cost: " + total 
 
           }
@@ -75,7 +76,7 @@
       background-size: cover;
     }
 
-
+    
   </style>
 </head>
 <body> 
@@ -90,12 +91,12 @@
     </div>
   </header>
 
-  <main style="width: 300px; font-size: 20px; word-wrap: break-word; padding-top: 50px; margin-left: 200px;">
-    <center><h2>Menu</h2></center>
+  <main style="font-size: 20px; word-wrap: break-word; padding-left: 200px; padding-bottom: 15px;">
+    <h2 style="padding-top: 20px">Menu</h2>
     <img src="Menu.png">
     <br>
-    <form name="dataHandlingForm" >
-      <div style="outline-style: solid;">
+    <form name="dataHandlingForm">
+      <div style="outline-style: solid; width:450px">
         <h2>Check Out</h2>
 
           <!-- Label and Text Input elements -->
@@ -131,7 +132,6 @@
 
         <p id="output" style="width: 300px; font-size: 20px; word-wrap: break-word; padding-top: 50px;">Order Information</p>
       </div>
-    <p>MENU INSERT STUFF HERE</p>
     
   </main>
 
